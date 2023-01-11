@@ -1,2 +1,7 @@
 # 最右去广告模块
 本模块没有什么技术含量，仅仅hook了若干广告SDK。根据官方公开信息，最右APP的广告SDK达到9种之多，因此仍可能有广告残留，欢迎带上有广告标的截图反馈。
+
+## SimpleHook配置
+若不想多安装一个apk，且已有[SimpleHook](https://github.com/Xposed-Modules-Repo/me.simplehook)，可导入以下配置实现相同效果：
+
+>{"appName":"最右","configs":"[{\\"className\\":\\"cn.xiaochuankeji.xcad.sdk.XcADSdk\\",\\"enable\\":true,\\"fieldClassName\\":\\"\\",\\"fieldName\\":\\"\\",\\"hookPoint\\":\\"after\\",\\"methodName\\":\\"init\\",\\"mode\\":2,\\"params\\":\\"android.app.Application,java.lang.String\\",\\"resultValues\\":\\"\\",\\"returnClassName\\":\\"\\"},{\\"className\\":\\"com.qumeng.advlib.api.AiClkAdManager\\",\\"enable\\":true,\\"fieldClassName\\":\\"\\",\\"fieldName\\":\\"\\",\\"hookPoint\\":\\"after\\",\\"methodName\\":\\"init\\",\\"mode\\":2,\\"params\\":\\"android.content.Context,java.lang.String\\",\\"resultValues\\":\\"\\",\\"returnClassName\\":\\"\\"},{\\"className\\":\\"com.bytedance.sdk.openadsdk.TTAdConfig\\",\\"enable\\":true,\\"fieldClassName\\":\\"\\",\\"fieldName\\":\\"\\",\\"hookPoint\\":\\"after\\",\\"methodName\\":\\"getSdkInfo\\",\\"mode\\":0,\\"params\\":\\"\\",\\"resultValues\\":\\"null\\",\\"returnClassName\\":\\"\\"},{\\"className\\":\\"com.qq.e.comm.managers.b\\",\\"enable\\":true,\\"fieldClassName\\":\\"\\",\\"fieldName\\":\\"\\",\\"hookPoint\\":\\"after\\",\\"methodName\\":\\"d\\",\\"mode\\":0,\\"params\\":\\"\\",\\"resultValues\\":\\"false\\",\\"returnClassName\\":\\"\\"}]","description":"去广告 By 快乐小牛","enable":false,"id":18,"packageName":"cn.xiaochuankeji.tieba","versionName":"5.11.20"}
